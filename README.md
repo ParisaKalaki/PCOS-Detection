@@ -49,11 +49,11 @@ A supervised machine learning pipeline designed to predict the likelihood of **P
 
 ## 🤖 Model Performance
 
-| Model             | Recall | F1-Score | AUC-ROC |
-|------------------|--------|----------|---------|
-| LogisticRegression | 0.78   | 0.76     | 0.83    |
-| Decision Tree     | 0.81   | 0.77     | 0.85    |
-| Random Forest     | **0.86** | **0.82**  | **0.89** |
+| Model              | Recall   | F1-Score | AUC-ROC  |
+| ------------------ | -------- | -------- | -------- |
+| LogisticRegression | 0.78     | 0.76     | 0.83     |
+| Decision Tree      | 0.81     | 0.77     | 0.85     |
+| Random Forest      | **0.86** | **0.82** | **0.89** |
 
 > Random Forest performed best in identifying positive PCOS cases with the highest recall and overall balanced metrics.
 
@@ -64,29 +64,34 @@ A supervised machine learning pipeline designed to predict the likelihood of **P
 ![Feature Importance](plots/feature_importance.png)
 
 ---
-##  Confusion Matrix (Random Forest)
+
+## Confusion Matrix (Random Forest)
 
 ![RF-confusion-matrix](plots/RF-confusion-matrix.png)
 
 ---
 
-##  ROC (Random Forest)
+## ROC (Random Forest)
 
 ![ROC](plots/ROC.png)
 
 ---
-##  Precision Recall (Random Forest)
+
+## Precision Recall (Random Forest)
 
 ![RF-precision-recall](RF-precision-recall.png)
 
 ---
-##  Learning Curve (Random Forest)
+
+## Learning Curve (Random Forest)
 
 ![RF-learning-curve](plots/RF-learning-curve.png)
 
 ---
+
 ## 📁 Project Structure
 
+```
 pcos-ml-detection/
 │
 ├── data/
@@ -97,8 +102,9 @@ pcos-ml-detection/
 │ ├── correlation.png
 │ ├── feature-importance.png
 │ └── ...
-├── README.md
-└── requirements.txt
+└── README.md
+```
+
 ---
 
 ## 📌 Key Takeaways
@@ -115,6 +121,6 @@ pcos-ml-detection/
 
 ## 📝 Dataset
 
-The dataset was sourced from Kaggle: [PCOS Dataset]([https://www.kaggle.com/datasets/](https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos))
+The dataset was sourced from Kaggle: [PCOS Dataset](<[https://www.kaggle.com/datasets/](https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos)>)
 
 ---
