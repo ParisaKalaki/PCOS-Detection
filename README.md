@@ -109,6 +109,6 @@ pcos-ml-detection/
 
 ## 📝 Dataset
 
-The dataset was sourced from Kaggle: [PCOS Dataset](<[https://www.kaggle.com/datasets/](https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos)>)
+The dataset was sourced from Kaggle: [PCOS Dataset](https://www.kaggle.com/datasets/prasoonkottarathil/polycystic-ovary-syndrome-pcos)
 
 ---
