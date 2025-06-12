@@ -33,7 +33,7 @@ A deep dive into the dataset was conducted to understand variable distributions,
 
 | Plot                                              | Description                                                               |
 | ------------------------------------------------- | ------------------------------------------------------------------------- |
-| ![Correlation](plots/Correlation.png)             | Correlation heatmap to identify relationships between numerical features. |
+| ![Correlation](plots/correlation.png)             | Correlation heatmap to identify relationships between numerical features. |
 | ![imbalanced-target](plots/imbalanced-target.png) | Target class distribution showing imbalance in PCOS labels.               |
 
 ---
@@ -74,8 +74,8 @@ Detailed classification reports for top models using the most informative featur
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | ![RF-confusion-matrix](plots/RF-confusion-matrix.png) | Confusion matrix of the Random Forest classifier.                                   |
 | ![ROC](plots/RF-ROC.png)                              | Receiver Operating Characteristic (ROC) curve for evaluating classifier trade-offs. |
-| ![RF-precision-recall](RF-precision-recall.png)       | Precision-Recall curve to evaluate performance under class imbalance.               |
-| ![RF-learning-curve](RF-learning-curve.png)           | Learning curve showing model generalization and overfitting/underfitting trends.    |
+| ![RF-precision-recall](plots/RF-precision-recall.png) | Precision-Recall curve to evaluate performance under class imbalance.               |
+| ![RF-learning-curve](plots/RF-learning-curve.png)     | Learning curve showing model generalization and overfitting/underfitting trends.    |
 
 ## 📁 Project Structure
 
