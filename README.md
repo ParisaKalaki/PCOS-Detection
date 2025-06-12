@@ -64,7 +64,7 @@ Detailed classification reports for top models using the most informative featur
 
 | Plot                                                | Description                                                           |
 | --------------------------------------------------- | --------------------------------------------------------------------- |
-| ![Feature Importance](plots/feature_importance.png) | Most influential features identified by the Random Forest classifier. |
+| ![Feature Importance](plots/feature-importance.png) | Most influential features identified by the Random Forest classifier. |
 
 ---
 
@@ -73,9 +73,9 @@ Detailed classification reports for top models using the most informative featur
 | Plot                                                  | Description                                                                         |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | ![RF-confusion-matrix](plots/RF-confusion-matrix.png) | Confusion matrix of the Random Forest classifier.                                   |
-| ![ROC](plots/ROC.png)                                 | Receiver Operating Characteristic (ROC) curve for evaluating classifier trade-offs. |
+| ![ROC](plots/RF-ROC.png)                              | Receiver Operating Characteristic (ROC) curve for evaluating classifier trade-offs. |
 | ![RF-precision-recall](RF-precision-recall.png)       | Precision-Recall curve to evaluate performance under class imbalance.               |
-| ![RF-learning-curve](plots/RF-learning-curve.png)     | Learning curve showing model generalization and overfitting/underfitting trends.    |
+| ![RF-learning-curve](RF-learning-curve.png)           | Learning curve showing model generalization and overfitting/underfitting trends.    |
 
 ## 📁 Project Structure
 
