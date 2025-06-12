@@ -29,65 +29,53 @@ A supervised machine learning pipeline designed to predict the likelihood of **P
 
 ## 📈 Exploratory Data Analysis (EDA)
 
-### Correlation
+A deep dive into the dataset was conducted to understand variable distributions, correlations, and potential imbalances in the target class.
 
-![Correlation](plots/Correlation.png)
-
-### imbalanced target
-
-![imbalanced-target](plots/imbalanced-target.png)
+| Plot                                              | Description                                                               |
+| ------------------------------------------------- | ------------------------------------------------------------------------- |
+| ![Correlation](plots/Correlation.png)             | Correlation heatmap to identify relationships between numerical features. |
+| ![imbalanced-target](plots/imbalanced-target.png) | Target class distribution showing imbalance in PCOS labels.               |
 
 ---
 
 ## 🔍 Feature Selection
 
-### Point-Biserial Correlation Heatmap
-
-![point-biserial-correlation](plots/point-biserial-correlation.png)
+| Plot                                                                | Description                                                                                                     |
+| ------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
+| ![point-biserial-correlation](plots/point-biserial-correlation.png) | Point-Biserial correlation heatmap used for selecting relevant features with respect to binary target variable. |
 
 ---
 
 ## 🤖 Model Performance
 
-| Model              | Recall   | F1-Score | AUC-ROC  |
-| ------------------ | -------- | -------- | -------- |
-| LogisticRegression | 0.78     | 0.76     | 0.83     |
-| Decision Tree      | 0.81     | 0.77     | 0.85     |
-| Random Forest      | **0.86** | **0.82** | **0.89** |
+Detailed classification reports for top models using the most informative features:
 
-> Random Forest performed best in identifying positive PCOS cases with the highest recall and overall balanced metrics.
+| Model                   | Accuracy | Precision   | Recall      | F1-Score    | AUC-ROC  |
+| ----------------------- | -------- | ----------- | ----------- | ----------- | -------- |
+| **Random Forest**       | **0.93** | 0.95 / 0.89 | 0.95 / 0.89 | 0.95 / 0.89 | **0.89** |
+| **Decision Tree**       | 0.91     | 0.92 / 0.88 | 0.95 / 0.83 | 0.93 / 0.86 | 0.85     |
+| **Logistic Regression** | 0.94     | 0.95 / 0.91 | 0.96 / 0.89 | 0.95 / 0.90 | 0.83     |
 
----
-
-## 🔍 Feature Importance (Random Forest)
-
-![Feature Importance](plots/feature_importance.png)
+> All models were tuned using the top features. Random Forest achieved the highest performance overall, especially in balancing precision and recall for both classes.
 
 ---
 
-## Confusion Matrix (Random Forest)
+## 📌 Feature Importance (Random Forest)
 
-![RF-confusion-matrix](plots/RF-confusion-matrix.png)
-
----
-
-## ROC (Random Forest)
-
-![ROC](plots/ROC.png)
+| Plot                                                | Description                                                           |
+| --------------------------------------------------- | --------------------------------------------------------------------- |
+| ![Feature Importance](plots/feature_importance.png) | Most influential features identified by the Random Forest classifier. |
 
 ---
 
-## Precision Recall (Random Forest)
+## 📉 Model Diagnostics
 
-![RF-precision-recall](RF-precision-recall.png)
-
----
-
-## Learning Curve (Random Forest)
-
-![RF-learning-curve](plots/RF-learning-curve.png)
-
----
+| Plot                                                  | Description                                                                         |
+| ----------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| ![RF-confusion-matrix](plots/RF-confusion-matrix.png) | Confusion matrix of the Random Forest classifier.                                   |
+| ![ROC](plots/ROC.png)                                 | Receiver Operating Characteristic (ROC) curve for evaluating classifier trade-offs. |
+| ![RF-precision-recall](RF-precision-recall.png)       | Precision-Recall curve to evaluate performance under class imbalance.               |
+| ![RF-learning-curve](plots/RF-learning-curve.png)     | Learning curve showing model generalization and overfitting/underfitting trends.    |
 
 ## 📁 Project Structure
 
